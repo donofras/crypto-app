@@ -4,23 +4,27 @@ PODS:
     - Charts/Core (= 3.6.0)
   - Charts/Core (3.6.0)
   - SwiftyJSON (5.0.0)
+  - TinyConstraints (4.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - Charts
   - SwiftyJSON
+  - TinyConstraints
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Charts
     - SwiftyJSON
+    - TinyConstraints
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
 
-PODFILE CHECKSUM: d696ac76068c40ebc455d8cefe63f76a7b0a0023
+PODFILE CHECKSUM: 31fdec77ad03665019cd2d2b7d31aadecae160d1
 
 COCOAPODS: 1.10.0

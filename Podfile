@@ -9,5 +9,6 @@ target 'CryptoApp' do
   pod 'Alamofire', '~> 5.2'
   pod 'SwiftyJSON'
   pod 'Charts'
+  pod 'TinyConstraints'
 
 end

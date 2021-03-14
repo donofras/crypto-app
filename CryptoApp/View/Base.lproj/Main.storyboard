@@ -30,10 +30,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yma-Ah-vED" userLabel="BitcoinView">
-                                        <rect key="frame" x="15" y="105" width="384" height="80"/>
+                                        <rect key="frame" x="21.5" y="105" width="371" height="80"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="b6v-gt-VPB">
-                                                <rect key="frame" x="0.0" y="0.0" width="384" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="371" height="80"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="v2K-zV-xlT">
                                                         <rect key="frame" x="0.0" y="0.5" width="80" height="79"/>
@@ -51,7 +51,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1u-dd-4KB">
-                                                        <rect key="frame" x="310" y="22" width="74" height="36"/>
+                                                        <rect key="frame" x="310" y="22" width="61" height="36"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <color key="textColor" name="Text Color"/>
                                                         <nil key="highlightedColor"/>
@@ -77,6 +77,12 @@
                                     <constraint firstAttribute="height" constant="185" id="wb9-92-k5q"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIP-aE-ief" userLabel="ChartView">
+                                <rect key="frame" x="0.0" y="254" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="d9W-NP-Dts"/>
+                                </constraints>
+                            </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMj-Tk-fLg">
                                 <rect key="frame" x="0.0" y="637" width="414" height="225"/>
                                 <color key="tintColor" name="Text Color"/>
@@ -84,19 +90,53 @@
                                     <constraint firstAttribute="height" constant="225" id="71i-bP-9ih"/>
                                 </constraints>
                             </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Qhb-wR-sa4">
+                                <rect key="frame" x="0.0" y="556" width="414" height="79"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQU-NO-IMr">
+                                        <rect key="frame" x="0.0" y="18.5" width="124.5" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <state key="normal" title="1 Week">
+                                            <color key="titleColor" name="Text Color"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC3-Oc-DOx">
+                                        <rect key="frame" x="144.5" y="18.5" width="125" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <state key="normal" title="1 Mounth">
+                                            <color key="titleColor" name="Text Color"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlK-BT-ApO">
+                                        <rect key="frame" x="289.5" y="18.5" width="124.5" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <state key="normal" title="1 Year">
+                                            <color key="titleColor" name="Text Color"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
                             <constraint firstItem="wMj-Tk-fLg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="261-bg-fHl"/>
                             <constraint firstItem="wMj-Tk-fLg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4N4-m7-S32"/>
+                            <constraint firstItem="tIP-aE-ief" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6sw-tH-YRS"/>
+                            <constraint firstItem="tIP-aE-ief" firstAttribute="top" secondItem="RhR-IA-Jrp" secondAttribute="bottom" constant="25" id="9mG-7u-Orm"/>
                             <constraint firstItem="RhR-IA-Jrp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9y7-2q-Khz"/>
+                            <constraint firstItem="Qhb-wR-sa4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DcE-oT-gBc"/>
                             <constraint firstItem="RhR-IA-Jrp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Sry-wq-ShI"/>
+                            <constraint firstItem="tIP-aE-ief" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZoK-TC-VZT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RhR-IA-Jrp" secondAttribute="trailing" id="hZa-Yo-Kkj"/>
+                            <constraint firstItem="Qhb-wR-sa4" firstAttribute="top" secondItem="tIP-aE-ief" secondAttribute="bottom" constant="2" id="jg3-Mh-yQc"/>
+                            <constraint firstItem="wMj-Tk-fLg" firstAttribute="top" secondItem="Qhb-wR-sa4" secondAttribute="bottom" constant="2" id="mcK-Jn-m4x"/>
+                            <constraint firstItem="Qhb-wR-sa4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rHo-AW-Bn7"/>
                             <constraint firstItem="wMj-Tk-fLg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ubh-mi-F4y"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chartView" destination="tIP-aE-ief" id="NcD-Df-ah2"/>
                         <outlet property="currencyLabel" destination="m1u-dd-4KB" id="Ax5-m1-hcg"/>
                         <outlet property="currencyPicker" destination="wMj-Tk-fLg" id="mcY-7p-rm2"/>
                         <outlet property="rateLabel" destination="Ft2-VW-7It" id="vMl-Xe-Hty"/>
